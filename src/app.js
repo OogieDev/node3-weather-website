@@ -51,7 +51,7 @@ app.get('/weather', (req, res) => {
             }
 
             res.send({
-                forecast: `На данный момент: ${data.currently.summary}. Вероятность дождя ${data.currently.precipProbability}%`,
+                forecast: `На данный момент: ${data.currently.summary}.Температура ${data.currently.temperature}. Вероятность дождя ${data.currently.precipProbability}%`,
                 location: location,
                 address: req.query.address
             })
